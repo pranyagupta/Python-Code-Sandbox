@@ -1,6 +1,8 @@
 #Write your code below this line 👇
-number_of_cans = (test_h*test_w)/5
-print(number_of_cans)
+def paint_calc(height, width, cover):
+    number_of_cans = (height * width) / cover
+    #return round(number_of_cans)
+    print(f"You'll need {round(number_of_cans)} cans of paint.")
 #Write your code above this line 👆
 # Define a function called paint_calc() so that the code below works.
 
@@ -8,4 +10,5 @@ print(number_of_cans)
 test_h = int(input("Height of wall: "))
 test_w = int(input("Width of wall: "))
 coverage = 5
-print(paint_calc(height=test_h, width=test_w, cover=coverage))
+paint_calc(height=test_h, width=test_w, cover=coverage)
+#print(f"You'll need {cans} cans of paint.")
