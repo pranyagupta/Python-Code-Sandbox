@@ -1,0 +1,8 @@
+name=input("enter you school:")
+grade=input("enter you grade: ")
+section=input("enter you section: ")
+print("I study in",name)
+print("I am in grade",grade)
+print("I am in section",section)
+print("My school comes in India's top 10 best schools ")
+print("I love my school")
