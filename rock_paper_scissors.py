@@ -1,5 +1,6 @@
+# import rndom module
 import random
-
+#get a symbol for each rock paper and scissors. 
 rock = '''
     _______
 ---'   ____)
@@ -28,17 +29,23 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
+#create a list which has the symbols for rps.
+
 rps = [rock, paper, scissors]
 
+#give a score whih is initialy 0.
 score = 0
-
+#create an infinite loop.
 while True:
+#take a choice from user for each rps in int form.
     user_choice = int(
         input(
             "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"
         ))
+    
+##generate a comuters choice .
     comp_choice = random.randint(0, 2)
-
+## give conditions for the game using if and else statement.
     if user_choice < 0 or user_choice > 2:
       print("You typed an invalid number")
     else:
